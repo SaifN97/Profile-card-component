@@ -12,6 +12,8 @@ html {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  background: #19a2ae;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,5 +28,146 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+.background-top {
+  position: absolute;
+  z-index: -1;
+  top: -40rem;
+  left: -20rem;
+}
+
+.background-bottom {
+  position: absolute;
+  z-index: -1;
+  bottom: -50rem;
+  right: -20rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 1.5rem 0;
+  color: #2d3248;
+}
+
+h1 span {
+  font-weight: lighter;
+  color: #6a6f81;
+}
+
+h2 {
+  color: #2d3248;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #6a6f81;
+  font-weight: lighter;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32.5rem;
+  height: 34rem;
+  background: white;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card .card-background {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.card .card-info {
+  width: 100%;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card .card-info .card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70%;
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+}
+
+.card .card-info .card-header .victor {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.card .card-info .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid lightgray;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+  padding-top: 2rem;
+}
+
+.card .card-info .stats .stat p {
+  color: #969696;
 }
 /*# sourceMappingURL=styles.css.map */
