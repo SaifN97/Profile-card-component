@@ -27,22 +27,22 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 .background-top {
   position: absolute;
   z-index: -1;
-  top: -40rem;
-  left: -20rem;
+  top: 0;
+  left: 0;
 }
 
 .background-bottom {
   position: absolute;
   z-index: -1;
-  bottom: -50rem;
-  right: -20rem;
+  bottom: 0;
+  right: 0;
 }
 
 h1 {
@@ -95,7 +95,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 32.5rem;
+  width: 32rem;
   height: 34rem;
   background: white;
   position: relative;
@@ -147,6 +147,7 @@ main {
 
 .card .card-info .card-header .victor {
   border-radius: 50%;
+  border: 4px solid white;
   overflow: hidden;
 }
 
@@ -169,5 +170,32 @@ main {
 
 .card .card-info .stats .stat p {
   color: #969696;
+}
+
+@media (max-width: 1100px) {
+  html {
+    font-size: 60%;
+  }
+  .background-top img,
+  .background-bottom img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+  .background-top img,
+  .background-bottom img {
+    width: 300px;
+    height: 300px;
+  }
+  .victor img {
+    width: 70px;
+    height: 70px;
+    background: center center/cover;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

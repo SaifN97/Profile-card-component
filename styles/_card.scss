@@ -1,15 +1,15 @@
 .background-top {
   position: absolute;
   z-index: -1;
-  top: -40rem;
-  left: -20rem;
+  top: 0;
+  left: 0;
 }
 
 .background-bottom {
   position: absolute;
   z-index: -1;
-  bottom: -50rem;
-  right: -20rem;
+  bottom: 0;
+  right: 0;
 }
 h1 {
   font-size: 1.8rem;
@@ -42,7 +42,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 32.5rem;
+  width: 32rem;
   height: 34rem;
   background: white;
   position: relative;
@@ -61,6 +61,7 @@ main {
     .card-header {
       .victor {
         border-radius: 50%;
+        border: 4px solid white;
         overflow: hidden;
       }
       display: flex;
